@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+
+  <xacro:include filename="robot_core.xacro" />
+  <gazebo>
+    <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
+      <robotNamespace>/phantomx</robotNamespace>
+    </plugin>
+  </gazebo>
+  
+</robot>

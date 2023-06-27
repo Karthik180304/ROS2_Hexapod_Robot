@@ -1,0 +1,88 @@
+[0.393s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.393s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=3, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f8f884e9ab0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f8f884e9540>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f8f884e9540>>)
+[0.423s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.423s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.423s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.423s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.423s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.423s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.423s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/satya/robot_ws/src/articubot_one'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.439s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'my_py_pkg'
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.440s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.480s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/satya/ros2_ws/ros2_ws/install
+[0.483s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 279 installed packages in /opt/ros/humble
+[0.485s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.562s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'my_py_pkg' is in: /home/satya/ros2_ws/ros2_ws/install/my_py_pkg
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding my_py_pkg
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_target' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.566s] DEBUG:colcon.colcon_core.verb:Building package 'my_py_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/satya/robot_ws/src/articubot_one/build/my_py_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/satya/robot_ws/src/articubot_one/install/my_py_pkg', 'merge_install': False, 'path': '/home/satya/robot_ws/src/articubot_one', 'symlink_install': False, 'test_result_base': None}
+[0.568s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.578s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.578s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/satya/robot_ws/src/articubot_one' with build type 'ament_cmake'
+[0.579s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/satya/robot_ws/src/articubot_one'
+[0.587s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.587s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.587s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/satya/robot_ws/src/articubot_one/build/my_py_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/satya/ros2_ws/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/satya/robot_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/satya/robot_ws/src/articubot_one/install/my_py_pkg
+[2.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/satya/robot_ws/src/articubot_one/build/my_py_pkg' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/satya/ros2_ws/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/satya/robot_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/satya/robot_ws/src/articubot_one/install/my_py_pkg
+[2.841s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_py_pkg)
+[2.854s] Level 1:colcon.colcon_core.environment:checking '/home/satya/robot_ws/src/articubot_one/install/my_py_pkg' for CMake module files
+[2.854s] Level 1:colcon.colcon_core.environment:checking '/home/satya/robot_ws/src/articubot_one/install/my_py_pkg' for CMake config files
+[2.855s] Level 1:colcon.colcon_core.environment:checking '/home/satya/robot_ws/src/articubot_one/install/my_py_pkg/bin'
+[2.855s] Level 1:colcon.colcon_core.environment:checking '/home/satya/robot_ws/src/articubot_one/install/my_py_pkg/lib/pkgconfig/my_py_pkg.pc'
+[2.856s] Level 1:colcon.colcon_core.environment:checking '/home/satya/robot_ws/src/articubot_one/install/my_py_pkg/lib/python3.10/site-packages'
+[2.856s] Level 1:colcon.colcon_core.environment:checking '/home/satya/robot_ws/src/articubot_one/install/my_py_pkg/bin'
+[2.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/satya/robot_ws/src/articubot_one/install/my_py_pkg/share/my_py_pkg/package.ps1'
+[2.859s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/satya/robot_ws/src/articubot_one/install/my_py_pkg/share/my_py_pkg/package.dsv'
+[2.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/satya/robot_ws/src/articubot_one/install/my_py_pkg/share/my_py_pkg/package.sh'
+[2.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/satya/robot_ws/src/articubot_one/install/my_py_pkg/share/my_py_pkg/package.bash'
+[2.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/satya/robot_ws/src/articubot_one/install/my_py_pkg/share/my_py_pkg/package.zsh'
+[2.862s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/satya/robot_ws/src/articubot_one/install/my_py_pkg/share/colcon-core/packages/my_py_pkg)
+[2.873s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.874s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.874s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[2.874s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.881s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.881s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.881s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.948s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.951s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/satya/robot_ws/src/articubot_one/install/local_setup.ps1'
+[2.952s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/satya/robot_ws/src/articubot_one/install/_local_setup_util_ps1.py'
+[2.953s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/satya/robot_ws/src/articubot_one/install/setup.ps1'
+[2.955s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/satya/robot_ws/src/articubot_one/install/local_setup.sh'
+[2.955s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/satya/robot_ws/src/articubot_one/install/_local_setup_util_sh.py'
+[2.956s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/satya/robot_ws/src/articubot_one/install/setup.sh'
+[2.957s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/satya/robot_ws/src/articubot_one/install/local_setup.bash'
+[2.957s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/satya/robot_ws/src/articubot_one/install/setup.bash'
+[2.959s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/satya/robot_ws/src/articubot_one/install/local_setup.zsh'
+[2.959s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/satya/robot_ws/src/articubot_one/install/setup.zsh'

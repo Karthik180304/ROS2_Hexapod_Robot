@@ -1,0 +1,28 @@
+[0.086s] Invoking command in '/home/satya/robot_ws/src/articubot_one/build/my_py_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/satya/ros2_ws/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/satya/robot_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/satya/robot_ws/src/articubot_one/install/my_py_pkg
+[0.795s] -- The C compiler identification is GNU 11.3.0
+[1.042s] -- The CXX compiler identification is GNU 11.3.0
+[1.089s] -- Detecting C compiler ABI info
+[1.227s] -- Detecting C compiler ABI info - done
+[1.234s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.236s] -- Detecting C compile features
+[1.239s] -- Detecting C compile features - done
+[1.247s] -- Detecting CXX compiler ABI info
+[1.412s] -- Detecting CXX compiler ABI info - done
+[1.432s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.433s] -- Detecting CXX compile features
+[1.434s] -- Detecting CXX compile features - done
+[1.528s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.910s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[2.144s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.237s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[2.237s]   ament_package_xml() package name 'my_py_pkg' in '/package.xml' does not
+[2.237s]   match current PROJECT_NAME 'articubot_one'.  You must call project() with
+[2.237s]   the same package name before.
+[2.237s] Call Stack (most recent call first):
+[2.238s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[2.238s]   CMakeLists.txt:32 (ament_lint_auto_find_test_dependencies)
+[2.238s] 
+[2.238s] [0m
+[2.238s] -- Configuring incomplete, errors occurred!
+[2.238s] See also "/home/satya/robot_ws/src/articubot_one/build/my_py_pkg/CMakeFiles/CMakeOutput.log".
+[2.245s] Invoked command in '/home/satya/robot_ws/src/articubot_one/build/my_py_pkg' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/satya/ros2_ws/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/satya/robot_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/satya/robot_ws/src/articubot_one/install/my_py_pkg
