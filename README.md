@@ -2,7 +2,7 @@
 
 This repository contains a ROS2-based project for a hexapod robot with line following functionality. The project consists of three packages: `articubot_one`, `my_robot_bringup`, and `hexapod_robot`. Each package serves a specific purpose in the overall system.
 
-![Hexapod Robot](/home/karthikms/Downloads/hexapod.jpeg)
+![image](https://github.com/Karthik180304/ROS2_Hexapod_Robot/assets/118727786/73a43ad4-a82d-4f25-988b-e2b991d39699)
 
 
 ## Packages
