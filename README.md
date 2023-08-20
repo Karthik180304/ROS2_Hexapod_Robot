@@ -1,6 +1,6 @@
 # Hexapod Robot Line Following Project
 
-This repository contains a ROS2-based project for a hexapod robot with line following functionality. The project consists of three packages: `articubot_one`, `my_robot_bringup`, and `hexapod_robot`. Each package serves a specific purpose in the overall system.
+This repository contains a ROS2-based project for a hexapod robot with line-following functionality. The project consists of three packages: `articubot_one`, `my_robot_bringup`, and `hexapod_robot`. Each package serves a specific purpose in the overall system.
 
 ![image](https://github.com/Karthik180304/ROS2_Hexapod_Robot/assets/118727786/73a43ad4-a82d-4f25-988b-e2b991d39699)
 
@@ -34,12 +34,12 @@ To use this project, follow the steps below:
 2. Clone this repository:
 
    ```
-   git clone https://github.com/Kar180304/hexapod-line-following.git
+   git clone git clone https://github.com/Karthik180304/ROS2_Hexapod_Robot.git
    ````
 
 1. Build the project using colcon:
     ```
-    cd hexapod-line-following
+    cd ~/ros2_workspace
     colcon build
     ```
 2. Source the setup files:
